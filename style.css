@@ -5,6 +5,9 @@
 .slaid{
   margin-top: 50px;
 }
+ol, ul {
+	list-style: none;
+}
 
 .position-fixed{
   position: fixed;
