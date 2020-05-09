@@ -1,5 +1,21 @@
+/* Main Banner */
+.margin-bottom{
+  margin-bottom: 250px;
+}
+.slaid{
+  margin-top: 50px;
+}
 
-.bg-beatch{
+.position-fixed{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
+  background-color: white;
+}
+/* Backgroun Image */
+.bg-beach{
     width: 100%;
     height: 504px;
     background:
@@ -13,8 +29,50 @@
     background-repeat: no-repeat;
 }
 .margin{
-    padding-top: 121px;
+    padding-top: 118px;
 }
-.margin-bottom{
-    margin-bottom: 250px;
+.layer{
+  height: 50px;
+}
+.offers-section{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.position-relative{
+  position: relative;
+}
+.postion-absolute{
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  z-index: 5;
+  background: #ffa31a;
+  font-size: 13px;
+}
+.paragraph{
+  padding: 2px 5px;
+  margin: 0;
+}
+
+/* Start Footer */
+footer{
+  background-color: black;
+}
+.fonts{
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+input:focus{
+  outline: none;
+}
+.line{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+button{
+  background-color: #1affff;
+  border: 2px solid #1affff;
+  height: 30px;
 }
