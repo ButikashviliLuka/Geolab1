@@ -1,6 +1,5 @@
 /* Main Banner */
 .margin-bottom{
-  /* margin-bottom: 250px; */
   margin-bottom: 20%;
 
 }
@@ -105,8 +104,6 @@ button{
   .services-section-div1 p{
     display: none;
   }
-}
-@media only screen and (max-width: 920px) {
   .form-div{
     display: none;
   }
@@ -135,6 +132,9 @@ button{
     white-space: nowrap;
     margin-left: 50%;
     transform: translate(-50%);
+  }
+  .section-numbers div {
+    font-size: 15px;
   }
 
 }
