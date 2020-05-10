@@ -13,29 +13,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="position-fixed">
-            <header class=" row pt-3 pb-3">
-                <div class="col-xl-6 col-lg-5 col-md-4 col-sm-3 pl-5">
-                    <img src="images/Logo.svg" alt="logo" class="col-xl-4 col-lg-5 col-md-8 col-sm-12">
-                </div>
-                <nav class="col-lg-6 col-md-7 col-sm-8">
-                    <ul class=" nav text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">OUR SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">TOUR PACKAGE</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+        <header class="header-wraper">
+            <div class="container">
+             <nav class="navbar navbar-expand-lg navbar-light">
+                 <img class="navbar-brand" src="images/logo.svg" alt="image">
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+             
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                     <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href="#">ABOUT US</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">OUR SERVICES</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">TOUR PACKAGE</a>
+                    </li>
+                 </ul>
+                 </div>
+             </nav>
+             </div>
+        </header>
         <div id="carouselExampleCaptions" class="container-fluid p-0 carousel slide slaid" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -121,22 +125,22 @@
                 <div class="col-3">
                     <img class="layer" src="images/Layer 3.svg" alt="layer">
                     <h5 class="mt-3">120,859</h5>
-                    <p>HAPPY TRAVELERS</p>
+                    <p class="words">HAPPY TRAVELERS</p>
                 </div>
                 <div class="col-3">
                     <img class="layer" src="images/Layer 4.svg" alt="layer">
                     <h5 class="mt-3">2594</h5>
-                    <p>SATISFIED TOURS</p>
+                    <p class="words">SATISFIED TOURS</p>
                 </div>
                 <div class="col-3">
                     <img class="layer" src="images/Layer 5.svg" alt="layer">
                     <h5 class="mt-3">854</h5>
-                    <p>DESTINATION</p>
+                    <p class="words">DESTINATION</p>
                 </div>
                 <div class="col-3">
                     <img class="layer" src="images/Rounded Rectangle 1 copy 2.svg" alt="layer">
                     <h5 class="mt-3">978</h5>
-                    <p>HOTELS & RESORTS</p>
+                    <p class="words">HOTELS & RESORTS</p>
                 </div>
             </div>
         </section>
@@ -185,8 +189,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.136096883146!2d44.782830214938514!3d41.71758198342395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d4fa5b02d7%3A0xced15c2c7992ceb5!2sGeoLab!5e0!3m2!1sen!2sge!4v1589015769735!5m2!1sen!2sge" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
         <footer class="container-fluid p-0">
-            <div class="d-flex justify-content-around">
-                <div class="container row pt-4 col-xl-7 col-lg-12 footer-div">
+            <div class="d-flex justify-content-around form-div">
+                <div class="container row pt-4 col-xl-6 col-lg-8 col-md-12 footer-div">
                     <div class="col-3">
                         <ul class="text-white">
                             <li class="fonts">Quick Links</li>
@@ -215,11 +219,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-5 form-div">
+                <div class="col-xl-3 col-lg-3 col-md-5">
                     <form>
                         <label class="text-white mt-4">Subscribe to our newsletter</label>
-                        <input class="d-inline" type="search" id="search" name="search" placeholder="Your email"><!--
-                    --><button class="col-2 d-inline">Go</button>
+                        <div>
+                            <input class="d-inline" type="search" id="search" name="search" placeholder="Your email"><!--
+                            --><button class="col-2 d-inline">Go</button>
+                        </div>
                     </form>
                 </div>
             </div>

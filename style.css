@@ -3,8 +3,12 @@
   margin-bottom: 20%;
 
 }
-.slaid{
-  margin-top: 50px;
+.header-wraper {
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 20;
+  background-color: #fff;
 }
 ol, ul {
 	list-style: none;
@@ -105,38 +109,34 @@ button{
     display: none;
   }
   .form-div{
-    display: none;
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-@media only screen and (max-width: 877px) {
-  nav{
-    font-size: 14px;
+  .form-div:first-child{
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
+  .form-div:first-child{
+    display: block;
+  }
   .services-section{
     text-align: center;
   }
-
 }
 @media only screen and (max-width: 670px) {
-  header div {
-    display: none;
-  }
-  nav{
-    display: none;
-  }
   .footer-div{
     display: block;
     white-space: nowrap;
-    margin-left: 50%;
-    transform: translate(-50%);
   }
   .section-numbers div {
     font-size: 15px;
   }
-
+}
+@media only screen and (max-width: 670px) {
+  .words{
+    font-size: 10px;
+  }
 }
 
 
